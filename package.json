@@ -1,0 +1,20 @@
+{
+  "name": "simpu-one-pager",
+  "version": "1.0.0",
+  "description": "Simpu One Pager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
+  },
+  "keywords": [
+    "Simpu",
+    "One",
+    "Page"
+  ],
+  "author": "Tioluwani Kolawole",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="h-screen bg-white z-10 relative">
+      <div
+        class="w-[50%] h-[50%] z-0 absolute bottom-0 left-0 bg-gradient-to-t from-[rgba(0,101,235,0.5)]"
+      ></div>
+      <div
+        class="w-[50%] h-[50%] z-0 absolute bottom-0 right-0 bg-gradient-to-t from-[rgba(204,90,247,0.5)]"
+      ></div>
+      <div
+        class="h-screen absolute inset-0 bg-hero-background bg-700 lg:bg-900 bg-bottom bg-no-repeat z-0"
+      ></div>
+
+      <!-- Navigation -->
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav
+          class="flex items-center justify-between p-6 lg:px-12"
+          aria-label="Global"
+        >
+          <div class="flex lg:gap-x-40 lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Simpu</span>
+              <img
+                class="h-6 w-auto"
+                alt="Simpu Logo"
+                src="./images/simpu-logo.svg"
+              />
+            </a>
+
+            <div class="hidden lg:flex lg:gap-x-12">
+              <div class="group relative inline-block cursor-pointer">
+                <div
+                  class="flex items-center text-sm font-normal leading-6 gap-1 text-simpuGray hover:text-simpuGray/80"
+                >
+                  Products
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0_134_1523"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="20"
+                      height="20"
+                    >
+                      <rect width="20" height="20" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_134_1523)">
+                      <path
+                        d="M10 12.8125L5 7.81254L6.16667 6.64587L10 10.4792L13.8333 6.64587L15 7.81254L10 12.8125Z"
+                        fill="#4D4D4D"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="hidden absolute rounded-md bg-white w-[320px] min-w-[320px] shadow-lg p-4 group-hover:block"
+                >
+                  <ul class="flex flex-col gap-4">
+                    <li>
+                      <a
+                        href="#simpu-inbox"
+                        class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                      >
+                        <p class="font-semibold text-lg text-simpuBlack">
+                          Inbox
+                        </p>
+                        <p class="text-xs text-simpuGray">
+                          Collaborate on conversations in a view
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#simpu-text"
+                        class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                      >
+                        <p class="font-semibold text-lg text-simpuBlack">
+                          SMS Marketing
+                        </p>
+                        <p class="text-xs text-simpuGray">
+                          Send SMS broadcasts at scale
+                        </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#simpu-email"
+                        class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                      >
+                        <p class="font-semibold text-lg text-simpuBlack">
+                          Email Marketing
+                        </p>
+                        <p class="text-xs text-simpuGray">
+                          Build personalized email campaigns
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <a
+                href="https://www.simpu.co/about-us"
+                class="text-sm font-normal leading-6 text-simpuGray hover:text-simpuGray/80"
+                >About</a
+              >
+              <div class="group relative inline-block cursor-pointer">
+                <div
+                  class="flex items-center text-sm font-normal gap-1 leading-6 text-simpuGray hover:text-simpuGray/80"
+                >
+                  Resources
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <mask
+                      id="mask0_134_1523"
+                      style="mask-type: alpha"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="20"
+                      height="20"
+                    >
+                      <rect width="20" height="20" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_134_1523)">
+                      <path
+                        d="M10 12.8125L5 7.81254L6.16667 6.64587L10 10.4792L13.8333 6.64587L15 7.81254L10 12.8125Z"
+                        fill="#4D4D4D"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div
+                  class="w-[700px] min-w-[700px] hidden absolute rounded-md bg-white shadow-lg p-4 group-hover:block"
+                >
+                  <div class="flex flex-col gap-4">
+                    <ul class="flex gap-8 w-full">
+                      <li class="w-[33%]">
+                        <a
+                          href="https://www.simpu.co/demo"
+                          class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                        >
+                          <p class="font-semibold text-lg text-simpuBlack">
+                            Get demo
+                          </p>
+                          <p class="text-xs text-simpuGray">
+                            Learn how others us Simpu
+                          </p>
+                        </a>
+                      </li>
+                      <li class="w-[33%]">
+                        <a
+                          href="https://support.simpu.co"
+                          class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                        >
+                          <p class="font-semibold text-lg text-simpuBlack">
+                            Help center
+                          </p>
+                          <p class="text-xs text-simpuGray">
+                            Find answers to your questions
+                          </p>
+                        </a>
+                      </li>
+                      <li class="w-[33%]">
+                        <a
+                          href="https://updates.simpu.co/announcements"
+                          class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                        >
+                          <p class="font-semibold text-lg text-simpuBlack">
+                            Product updates
+                          </p>
+                          <p class="text-xs text-simpuGray">
+                            Our latest features
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="flex gap-8 w-full">
+                      <li class="w-[33%]">
+                        <a
+                          href="https://www.simpu.co/security"
+                          class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                        >
+                          <p class="font-semibold text-lg text-simpuBlack">
+                            Security
+                          </p>
+                          <p class="text-xs text-simpuGray">
+                            Secure & compliant system
+                          </p>
+                        </a>
+                      </li>
+                      <li class="w-[33%]">
+                        <a
+                          href="https://docs.simpu.co/"
+                          class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                        >
+                          <p class="font-semibold text-lg text-simpuBlack">
+                            API docs
+                          </p>
+                          <p class="text-xs text-simpuGray">
+                            Integrate with Simpu easily
+                          </p>
+                        </a>
+                      </li>
+                      <li class="w-[33%]">
+                        <a
+                          href="https://www.simpu.co/reviews"
+                          class="flex flex-col rounded-md px-3 py-1 text-sm font-normal leading-7 text-simpuBlack hover:bg-gray-100"
+                        >
+                          <p class="font-semibold text-lg text-simpuBlack">
+                            Customer stories
+                          </p>
+                          <p class="text-xs text-simpuGray">
+                            Learn from our customers
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              id="open-mobile-menu-btn"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden items-center lg:gap-x-4 lg:flex lg:flex-1 lg:justify-end"
+          >
+            <a
+              target="_blank"
+              href="https://cal.com/collinschukwuma/30mins"
+              class="flex items-center gap-2 text-sm font-semibold leading-6 px-6 py-2 text-white bg-simpuBlue rounded-md hover:bg-simpuBlue/90"
+              >Book a demo
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <mask
+                  id="mask0_134_1238"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                >
+                  <rect width="20" height="20" fill="currentColor" />
+                </mask>
+                <g mask="url(#mask0_134_1238)">
+                  <path
+                    d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                    fill="currentColor"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div
+          role="dialog"
+          id="mobile-menu"
+          aria-modal="true"
+          class="hidden transition-all"
+        >
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          >
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Simpu</span>
+                <img
+                  class="h-6 w-auto"
+                  alt="Simpu Logo"
+                  src="./images/simpu-logo.svg"
+                />
+              </a>
+              <button
+                type="button"
+                id="close-mobile-menu-btn"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <div class="flex flex-col gap-2">
+                    <a
+                      id="mobile-products-dropdown"
+                      class="-mx-3 cursor-pointer flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                      >Products
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="none"
+                        viewBox="0 0 20 20"
+                        id="mobile-products-arrow"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask
+                          id="mask0_134_1523"
+                          style="mask-type: alpha"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                        >
+                          <rect width="20" height="20" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_134_1523)">
+                          <path
+                            d="M10 12.8125L5 7.81254L6.16667 6.64587L10 10.4792L13.8333 6.64587L15 7.81254L10 12.8125Z"
+                            fill="#4D4D4D"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                    <div class="hidden" id="mobile-products-dropdown-menu">
+                      <ul class="ml-4 flex flex-col gap-2">
+                        <li>
+                          <a
+                            href="#simpu-inbox"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >Inbox
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#simpu-text"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >SMS Marketing
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#simpu-email"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >Email Marketing
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.simpu.co/about-us"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                    >About</a
+                  >
+                  <div class="flex flex-col gap-2">
+                    <a
+                      id="mobile-resources-dropdown"
+                      class="-mx-3 cursor-pointer flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                      >Resources
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="none"
+                        viewBox="0 0 20 20"
+                        id="mobile-resources-arrow"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <mask
+                          id="mask0_134_1523"
+                          style="mask-type: alpha"
+                          maskUnits="userSpaceOnUse"
+                          x="0"
+                          y="0"
+                          width="20"
+                          height="20"
+                        >
+                          <rect width="20" height="20" fill="#D9D9D9" />
+                        </mask>
+                        <g mask="url(#mask0_134_1523)">
+                          <path
+                            d="M10 12.8125L5 7.81254L6.16667 6.64587L10 10.4792L13.8333 6.64587L15 7.81254L10 12.8125Z"
+                            fill="#4D4D4D"
+                          />
+                        </g>
+                      </svg>
+                    </a>
+                    <div class="hidden" id="mobile-resources-dropdown-menu">
+                      <ul class="ml-4 flex flex-col gap-2">
+                        <li>
+                          <a
+                            href="https://www.simpu.co/demo"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >Get demo
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://support.simpu.co"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >Help center
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://updates.simpu.co/announcements"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >Product updates
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.simpu.co/reviews"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                          >
+                            Customer stories
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://docs.simpu.co/"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >API docs
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.simpu.co/security"
+                            class="-mx-3 flex items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-simpuBlack hover:bg-gray-50"
+                            >Security
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="py-6">
+                  <a
+                    target="_blank"
+                    href="https://cal.com/collinschukwuma/30mins"
+                    class="-mx-3 flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-simpuBlue hover:bg-simpuBlue/90"
+                    >Book a demo
+
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <mask
+                        id="mask0_134_1238"
+                        style="mask-type: alpha"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="0"
+                        width="20"
+                        height="20"
+                      >
+                        <rect width="20" height="20" fill="currentColor" />
+                      </mask>
+                      <g mask="url(#mask0_134_1238)">
+                        <path
+                          d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                          fill="currentColor"
+                        />
+                      </g>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero content -->
+      <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div class="mx-auto max-w-8xl pt-24">
+          <div class="flex flex-col gap-y-10 text-center">
+            <h1
+              class="text-4xl font-bold tracking-tight text-simpuBlack sm:text-6xl"
+            >
+              Grow your small <span class="underline">business</span>,<br />
+              one happy customer at a time.
+            </h1>
+            <div class="flex gap-1 items-center justify-center">
+              <p class="text-simpuGray font-normal">Backed by</p>
+              <img alt="techstars-logo" src="./images/techstars-logo.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="flex flex-col gap-12 bg-white p-6 lg:p-12">
+      <div
+        id="simpu-inbox"
+        class="flex flex-col gap-8 p-6 lg:py-32 lg:px-12 lg:gap-24 lg:flex-row items-center bg-simpuLightGray rounded-md"
+      >
+        <div class="w-full order-2 lg:order-1 lg:w-[50%]">
+          <div>
+            <p class="uppercase text-simpuBlue text-sm font-medium">
+              inbox made simpu
+            </p>
+            <h1 class="mt-4 font-bold text-4xl text-simpuBlack lg:text-5xl">
+              One Inbox, One Team,<br />
+              Faster Solutions
+            </h1>
+            <p class="text-simpuGray text-lg mt-6 font-normal">
+              Manage all your customer messages in one place.
+            </p>
+            <div class="mt-10 flex flex-col gap-4 lg:flex-row">
+              <a
+                target="_blank"
+                href="https://inbox.simpu.co/login"
+                class="flex items-center font-semibold font-lg justify-center gap-2 ring-simpuBlue bg-simpuBlue text-white h-[48px] px-4 rounded-md hover:bg-simpuBlue/90"
+                >Get started
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_134_1238"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <rect width="20" height="20" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_134_1238)">
+                    <path
+                      d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.simpu.co/products/shared-inbox"
+                class="flex items-center font-semibold font-lg justify-center gap-2 border border-simpuGray bg-transparent text-simpuBlack h-[48px] px-4 rounded-md hover:bg-white/90"
+                >Learn more
+
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_134_1238"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <rect width="20" height="20" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_134_1238)">
+                    <path
+                      d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full order-1 lg:order-2 lg:w-[50%]">
+          <img src="./images/illustration-1.png" class="object-cover" />
+        </div>
+      </div>
+
+      <div
+        id="simpu-text"
+        class="flex flex-col gap-8 p-6 lg:py-32 lg:px-12 lg:gap-24 lg:flex-row items-center bg-simpuLightGray rounded-md"
+      >
+        <div class="w-full order-2 lg:order-1 lg:w-[50%]">
+          <div>
+            <p class="uppercase text-simpuBlue text-sm font-medium">
+              text made simpu
+            </p>
+            <h1 class="mt-4 font-bold text-4xl text-simpuBlack lg:text-5xl">
+              Engage, Convert,<br />
+              Grow with Strategic<br />
+              Text Marketing
+            </h1>
+            <p class="text-simpuGray text-lg mt-6 font-normal">
+              Text your way to conversations.
+            </p>
+            <div class="mt-10 flex flex-col gap-4 lg:flex-row">
+              <a
+                target="_blank"
+                href="https://text.simpu.co/login"
+                class="flex items-center font-semibold font-lg justify-center gap-2 ring-simpuBlue bg-simpuBlue text-white h-[48px] px-4 rounded-md hover:bg-simpuBlue/90"
+                >Get started
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_134_1238"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <rect width="20" height="20" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_134_1238)">
+                    <path
+                      d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.simpu.co/products/sms-marketing"
+                class="flex items-center font-semibold font-lg justify-center gap-2 border border-simpuGray bg-transparent text-simpuBlack h-[48px] px-4 rounded-md hover:bg-white/90"
+                >Learn more
+
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_134_1238"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <rect width="20" height="20" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_134_1238)">
+                    <path
+                      d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full order-1 lg:order-2 lg:w-[50%]">
+          <img src="./images/illustration-2.png" class="object-cover" />
+        </div>
+      </div>
+
+      <div
+        id="simpu-email"
+        class="flex flex-col gap-8 p-6 lg:py-32 lg:px-12 lg:gap-24 lg:flex-row items-center bg-simpuLightGray rounded-md"
+      >
+        <div class="w-full order-2 lg:order-1 lg:w-[50%]">
+          <div>
+            <p class="uppercase text-simpuBlue text-sm font-medium">
+              mail made simpu
+            </p>
+            <h1 class="mt-4 font-bold text-4xl text-simpuBlack lg:text-5xl">
+              Automate,<br />
+              Personalize, Nuture
+            </h1>
+            <p class="text-simpuGray text-lg mt-6 font-normal">
+              Manage all your customer messages in one place.
+            </p>
+            <div class="mt-10 flex flex-col gap-4 lg:flex-row">
+              <a
+                target="_blank"
+                href="https://email.simpu.co/login"
+                class="flex items-center font-semibold font-lg justify-center gap-2 ring-simpuBlue bg-simpuBlue text-white h-[48px] px-4 rounded-md hover:bg-simpuBlue/90"
+                >Get started
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_134_1238"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <rect width="20" height="20" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_134_1238)">
+                    <path
+                      d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.simpu.co/products/email-marketing"
+                class="flex items-center font-semibold font-lg justify-center gap-2 border border-simpuGray bg-transparent text-simpuBlack h-[48px] px-4 rounded-md hover:bg-white/90"
+                >Learn more
+
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_134_1238"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                  >
+                    <rect width="20" height="20" fill="currentColor" />
+                  </mask>
+                  <g mask="url(#mask0_134_1238)">
+                    <path
+                      d="M5.33341 15L4.16675 13.8334L12.1667 5.83335H5.00008V4.16669H15.0001V14.1667H13.3334V7.00002L5.33341 15Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-full order-1 lg:order-2 lg:w-[50%]">
+          <img src="./images/illustration-3.png" class="object-cover" />
+        </div>
+      </div>
+      <div class="pt-3 pb-2 px-2 rounded-lg bg-simpuBlack">
+        <div class="flex flex-row gap-2 items-center">
+          <div class="flex flex-row gap-2">
+            <div class="rounded-full w-[10px] h-[10px] bg-[#F02787]"></div>
+            <div class="rounded-full w-[10px] h-[10px] bg-[#F2DF37]"></div>
+            <div class="rounded-full w-[10px] h-[10px] bg-[#75E14E]"></div>
+          </div>
+          <div
+            class="p-2 rounded-tl-lg rounded-tr-lg flex flex-row items-center gap-2 bg-[#9598A0]"
+          >
+            <div
+              class="w-[8px] h-[8px] flex-1 rounded-full bg-[#F8F8FA]/50"
+            ></div>
+            <div class="h-[6px] rounded-md bg-[#F8F8FA]/50 lg:w-[201px]"></div>
+          </div>
+        </div>
+        <div
+          class="p-2 rounded-tl-lg rounded-tr-lg flex flex-row justify-between items-center gap-2 bg-[#9598A0]"
+        >
+          <div class="flex items-center gap-1">
+            <div
+              class="w-0 h-0 border-t-[4px] border-b-[4px] border-r-[8px] border-t-transparent border-r-[#F8F8FA]/50 border-b-transparent"
+            ></div>
+            <div
+              class="w-0 h-0 border-t-[4px] border-b-[4px] border-l-[8px] border-t-transparent border-l-[#F8F8FA]/50 border-b-transparent"
+            ></div>
+          </div>
+          <div class="flex-1 h-[6px] rounded-md bg-[#F8F8FA]/50"></div>
+          <div class="w-[8px] h-[8px] rounded-full bg-[#F8F8FA]/50"></div>
+        </div>
+        <div
+          class="bg-[#F8F8FA] h-auto lg:h-[500px] p-4 rounded-bl-lg rounded-br-lg"
+        >
+          <div
+            class="flex h-full items-center justify-center text-center max-w-xl mx-auto"
+          >
+            <p class="font-semibold text-xl leading-10 text-simpuBlack">
+              At Simpu, we believe it's crucial for businesses to connect easily
+              with their customers. Our journey began when we noticed the
+              difficulties our clients faced. Many of our clients are small
+              businesses, so they often struggle to handle everyday customer
+              interactions across multiple team inboxes. Our clients told us
+              that connecting multiple channels to one inbox was great. However,
+              they wished sharing access to their inbox with team members could
+              be simpler.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-black px-6 pt-12 pb-10 lg:pt-24 lg:px-12">
+      <div
+        class="flex flex-col gap-5 items-start lg:items-center lg:justify-between lg:flex-row"
+      >
+        <img
+          class="h-6 w-auto"
+          alt="Simpu Logo"
+          src="./images/simpu-logo-white.svg"
+        />
+        <ul class="flex flex-row gap-6 items-center">
+          <li>
+            <a
+              href="https://www.facebook.com/SimpuInc"
+              class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/15 hover:bg-white/30"
+            >
+              <span class="sr-only">Simpu Facebook Link</span>
+              <img src="./images/facebook.svg"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/simpuinc"
+              class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/15 hover:bg-white/30"
+            >
+              <span class="sr-only">Simpu Twitter Link</span>
+              <img src="./images/twitter.svg"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/simpu-inc/"
+              class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/15 hover:bg-white/30"
+            >
+              <span class="sr-only">Simpu LinkedIn Link</span>
+              <img src="./images/linkedin.svg"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/simpuinc/"
+              class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/15 hover:bg-white/30"
+            >
+              <span class="sr-only">Simpu Instagram Link</span>
+              <img src="./images/instagram.svg"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <ul class="flex flex-col gap-5 mt-5 lg:gap-10 lg:mt-10 lg:flex-row">
+        <li>
+          <a
+            href="https://support.simpu.co"
+            class="text-white/80 font-normal hover:text-white"
+            >Help center</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.simpu.co/reviews"
+            class="text-white/80 font-normal hover:text-white"
+            >Customers</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.simpu.co/blog"
+            class="text-white/80 font-normal hover:text-white"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://updates.simpu.co/announcements"
+            class="text-white/80 font-normal hover:text-white"
+            >Product updates</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://docs.simpu.co"
+            class="text-white/80 font-normal hover:text-white"
+            >API docs</a
+          >
+        </li>
+      </ul>
+      <div class="mt-4 lg:mt-24 border-t border-simpuGray">
+        <div
+          class="flex mt-5 flex-col gap-5 lg:mt-10 lg:items-center lg:flex-row lg:justify-between"
+        >
+          <p class="text-white">
+            &copy; <span id="copyright-date"></span>. All rights reserved Simpu
+            Inc.
+          </p>
+          <ul class="flex flex-col gap-5 lg:gap-10 lg:flex-row">
+            <li>
+              <a
+                href="https://www.simpu.co/legal/saas-agreement"
+                class="text-white/80 font-normal hover:text-white"
+                >SaaS agreement
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.simpu.co/legal/privacy-policy"
+                class="text-white/80 font-normal hover:text-white"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.simpu.co/legal/cookie-policy"
+                class="text-white/80 font-normal hover:text-white"
+                >Cookie policy</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://simpu.statuspage.io/"
+                class="text-white/80 font-normal hover:text-white"
+                >Status</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
