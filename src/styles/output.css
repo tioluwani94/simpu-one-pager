@@ -1275,10 +1275,6 @@ html {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.bg-900 {
-  background-size: 900px;
-}
-
 .bg-700 {
   background-size: 700px;
 }
@@ -1544,6 +1540,10 @@ html {
     max-width: 24rem;
   }
 
+  .sm\:bg-600 {
+    background-size: 600px;
+  }
+
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1640,8 +1640,12 @@ html {
          column-gap: 10rem;
   }
 
-  .lg\:bg-900 {
-    background-size: 900px;
+  .lg\:bg-400 {
+    background-size: 400px;
+  }
+
+  .lg\:bg-300 {
+    background-size: 300px;
   }
 
   .lg\:p-12 {
@@ -1670,5 +1674,11 @@ html {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:bg-700 {
+    background-size: 700px;
   }
 }
