@@ -971,10 +971,6 @@ html {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-0 {
   width: 0px;
 }
@@ -1027,24 +1023,30 @@ html {
   min-width: 700px;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-\[600px\] {
-  max-width: 600px;
-}
-
 .max-w-\[60\%\] {
   max-width: 60%;
 }
 
-.max-w-\[1800px\] {
-  max-width: 1800px;
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-fit {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-\[object-fit\] {
+  max-width: object-fit;
+}
+
+.max-w-\[fit-content\] {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.max-w-\[auto\] {
+  max-width: auto;
 }
 
 .flex-1 {
@@ -1275,10 +1277,6 @@ html {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.bg-hero-background {
-  background-image: url('../images/hero-background.png');
-}
-
 .from-\[rgba\(0\2c 101\2c 235\2c 0\.5\)\] {
   --tw-gradient-from: rgba(0,101,235,0.5) var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(0, 101, 235, 0) var(--tw-gradient-to-position);
@@ -1289,18 +1287,6 @@ html {
   --tw-gradient-from: rgba(204,90,247,0.5) var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(204, 90, 247, 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.bg-600 {
-  background-size: 600px;
-}
-
-.bg-bottom {
-  background-position: bottom;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -1556,10 +1542,6 @@ html {
     max-width: 24rem;
   }
 
-  .sm\:bg-600 {
-    background-size: 600px;
-  }
-
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1656,10 +1638,6 @@ html {
          column-gap: 10rem;
   }
 
-  .lg\:bg-300 {
-    background-size: 300px;
-  }
-
   .lg\:p-12 {
     padding: 3rem;
   }
@@ -1698,21 +1676,9 @@ html {
   .xl\:max-w-\[1800px\] {
     max-width: 1800px;
   }
-
-  .xl\:bg-600 {
-    background-size: 600px;
-  }
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:h-\[50vh\] {
-    height: 50vh;
-  }
-
-  .\32xl\:p-0 {
-    padding: 0px;
-  }
-
   .\32xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
