@@ -135,4 +135,46 @@
     font-display: swap;
     src: url("../fonts/CerebriSansPro-HeavyItalic.ttf") format("truetype");
   }
+  .dock-item.bounce {
+    animation: bounce 0.5s;
+  }
+  .tooltip {
+    position: absolute;
+    top: -40px;
+    padding: 4px 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .dock-item:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .dot {
+    position: absolute;
+    bottom: -5px;
+    width: 4px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .dock-item.active .dot {
+    opacity: 1;
+  }
 }
