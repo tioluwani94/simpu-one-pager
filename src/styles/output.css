@@ -956,10 +956,6 @@ html {
   margin-top: 1.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .block {
   display: block;
 }
@@ -1012,10 +1008,6 @@ html {
   height: 50%;
 }
 
-.h-\[58px\] {
-  height: 58px;
-}
-
 .h-\[6px\] {
   height: 6px;
 }
@@ -1052,6 +1044,10 @@ html {
   width: 10px;
 }
 
+.w-\[180px\] {
+  width: 180px;
+}
+
 .w-\[320px\] {
   width: 320px;
 }
@@ -1084,25 +1080,12 @@ html {
   width: 100%;
 }
 
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.w-\[180px\] {
-  width: 180px;
-}
-
 .min-w-\[320px\] {
   min-width: 320px;
 }
 
 .min-w-\[700px\] {
   min-width: 700px;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
 }
 
 .max-w-56 {
@@ -1113,12 +1096,12 @@ html {
   max-width: 60%;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .max-w-\[640px\] {
   max-width: 640px;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-1 {
@@ -1220,10 +1203,6 @@ html {
 
 .divide-gray-500\/10 > :not([hidden]) ~ :not([hidden]) {
   border-color: rgb(107 114 128 / 0.1);
-}
-
-.self-center {
-  align-self: center;
 }
 
 .overflow-hidden {
@@ -1475,6 +1454,10 @@ html {
   padding-bottom: 2.5rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1495,12 +1478,13 @@ html {
   padding-top: 0.75rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -1531,16 +1515,6 @@ html {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -1618,14 +1592,14 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.ring-simpuBlue {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(0 101 235 / var(--tw-ring-opacity));
-}
-
 .ring-simpuBlack {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(29 29 31 / var(--tw-ring-opacity));
+}
+
+.ring-simpuBlue {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(0 101 235 / var(--tw-ring-opacity));
 }
 
 .backdrop-blur-md {
@@ -1662,6 +1636,10 @@ html {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-simpuBlack\/90:hover {
+  background-color: rgb(29 29 31 / 0.9);
+}
+
 .hover\:bg-simpuBlue\/90:hover {
   background-color: rgb(0 101 235 / 0.9);
 }
@@ -1672,10 +1650,6 @@ html {
 
 .hover\:bg-white\/90:hover {
   background-color: rgb(255 255 255 / 0.9);
-}
-
-.hover\:bg-simpuBlack\/90:hover {
-  background-color: rgb(29 29 31 / 0.9);
 }
 
 .hover\:text-simpuGray\/80:hover {
@@ -1713,14 +1687,14 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
