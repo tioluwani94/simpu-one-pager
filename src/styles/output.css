@@ -956,10 +956,6 @@ html {
   margin-top: 1.5rem;
 }
 
-.block {
-  display: block;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -1028,6 +1024,10 @@ html {
   height: 100vh;
 }
 
+.h-\[20px\] {
+  height: 20px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1078,6 +1078,10 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .min-w-\[320px\] {
@@ -1345,11 +1349,6 @@ html {
 .bg-simpuLightGray {
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 250 / var(--tw-bg-opacity));
-}
-
-.bg-stone-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
